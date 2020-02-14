@@ -8,8 +8,8 @@ class UserController extends Controller
 {
     public function listUser(){
          $user= new User();
-          $user->name= "Númeral";
-        $user->email= "aindavoucomersimonegaldino@gmail.com";
+          $user->name= "Númer1al";
+        $user->email= "aind1avoucomersimonegaldino@gmail.com";
         $user->password= Hash::Make("123");
         $user->save();
         echo "<h1=>Listagem de Usuário</h1>";
