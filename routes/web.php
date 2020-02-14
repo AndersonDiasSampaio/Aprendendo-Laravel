@@ -11,8 +11,8 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+//Route::get('/', function () {
+//    return view('welcome');
+//});
 
-Route::get('listagem-usuario','UserController@listUser');
+Route::get('listagem-usuario','UserController@listUser')->name('listUser');
