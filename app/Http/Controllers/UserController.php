@@ -8,7 +8,12 @@ use Illuminate\Support\Facades\View;
 class UserController extends Controller
 {
     public function listUser(){
-        $users= User::all();        
+        /* $user= new User();
+        $user->email='anderson.dias.sampaio@gmail.com';
+        $user->name='Anderson';
+        $user->password=Hash::make(123);
+        $user->save();*/
+        $users= User::all();         
         return view('user', ['users'=>$users]);
     }
     //
